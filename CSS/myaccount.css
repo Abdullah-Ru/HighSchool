@@ -141,4 +141,30 @@ html:not(.dark-style) .account-settings-links .list-group-item.active {
 h5{
     margin-left:5px ;
 }
+.Afb{
+    text-decoration: none;
+}
+.Afb:hover{
+text-decoration: none;
+}
 
+#outline_btn {
+    padding: 0.5% 2%;
+    outline: 2px solid #2DC653;
+    color: #2DC653;
+}
+
+#outline_btn:hover {
+    background-color: #2DC653;
+    color: whitesmoke;
+}
+#outline_btn2 {
+    padding: 0.5% 2%;
+    background-color: red;
+    color: white;
+}
+
+/* #outline_btn2:hover {
+    background-color: #2DC653;
+    color: whitesmoke;
+} */
