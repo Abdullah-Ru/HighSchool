@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "IBM Plex Sans Arabic";
+}
+#Login h2 {
+    position: absolute;
+    text-align: center;
+    right: 100px;
+    top: 5%;
+    word-spacing: 1px;
+    font-size: 2em;
+    color: #2DC653;
+}
+ #Login {
+    position: absolute;
+    margin: auto;
+    left: 38%;
+    top: 25%;
+    border-style:solid ;
+    /* background-color: #DDB892; */
+    border: none;
+    border-radius: 10px;
+    width: 400px;
+    min-height: 400px;
+    box-shadow: #2DC653 0px 0px 3.5px 1px;
+}
+
+#Login input[type="text"] {
+    width: 50%;
+    border: none;
+    border-bottom: 2px solid #2DC653;
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+    font-size: 1.2em;
+    position: absolute;
+    top: 110px;
+    left: 105px;
+
+}
+
+#Login .label {
+    position: absolute;
+    top:108px;
+    left: 15%;
+    width: 200px;
+    color: #2DC653;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    font-size: 1.3em;
+}
+
+#Login input[type="text"]:focus~.label,
+#Login input[type="text"]:valid~.label {
+    top: 90px;
+    left: 50px;
+    font-size: 1em;
+    color: #2DC653;
+}
+
+/* #Login .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #2DC653;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+} */
+
+#Login input[type="text"]:focus~.underline,
+#Login input[type="text"]:valid~.underline {
+    transform: scaleX(1);
+}
+
+#Login input[type="password"] {
+    width: 50%;
+    border: none;
+    border-bottom: 2px solid #2DC653;
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+    color: black;
+    font-size: 1.2em;
+    position: absolute;
+    top: 200px;
+    left: 105px;
+
+}
+
+#Login .label2 {
+    position: absolute;
+    top: 200px;
+    left: 43%;
+    color: #2DC653;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    font-size: 1.3em;
+}
+
+#Login input[type="password"]:focus~.label2,
+#Login input[type="password"]:valid~.label2 {
+    top: 182px;
+    left: 180px;
+    font-size: 1em;
+    color: #2DC653;
+}
+
+/* #Login .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #B08968;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+} */
+
+#Login input[type="password"]:focus~.underline,
+#Login input[type="password"]:valid~.underline {
+    transform: scaleX(1);
+}
+
+#Login #sub {
+    position: absolute;
+    margin: 290px auto;
+    right: 135px;
+    --font-color: #2DC653;
+    --bg-color: white;
+    --main-color: #2DC653;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+}
+
+#sub:active {
+    box-shadow: 100px 100px var(--main-color);
+    transform: translate(3px, 3px);
+}
