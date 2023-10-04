@@ -1,18 +1,9 @@
-const daysOfWeekArabic = ['الأحد', 'الاثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة', 'السبت'];
-function getArabicDate() {
-    const today = new Date();
-    const dayOfWeek = daysOfWeekArabic[today.getDay()];
-    return `${dayOfWeek}`;
-}
-const api2 = 'https://64fdcced596493f7af7e9ac2.mockapi.io/api/v1/Chanses'
-axios.post(api2, getArabicDate()).then(response => {
-    console.log('تم إرسال البيانات بنجاح');
-    console.log('الرد من الـ API:', response.data);
-  })
-  .catch(error => {
-    console.error('حدث خطأ أثناء إرسال البيانات إلى الـ API:', error);
-  });
-
+// const daysOfWeekArabic = ['الأحد', 'الاثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة', 'السبت'];
+// function getArabicDate() {
+//     const today = new Date();
+//     const dayOfWeek = daysOfWeekArabic[today.getDay()];
+//     return `${dayOfWeek}`;
+// }
 function GetChanses() {
     axios
   .get("https://64fdcced596493f7af7e9ac2.mockapi.io/api/v1/Chanses")
@@ -38,7 +29,7 @@ function GetChanses() {
         </div>
         <button id="outline_btn" type="button" class="btn btn-outline btn-lg" style="font-weight: 400; font-size: 21px;  padding: 3px; width: 60px; margin: auto; margin-bottom:10px ;">قدّم</button>
         <div class="card-footer">
-          <small class="text-muted">وقت الاضافة : ${addData()}</small>
+          <small class="text-muted">وقت الاضافة : ${result.Date}</small>
         </div>
       </div>
       `;
