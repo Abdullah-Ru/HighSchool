@@ -1,0 +1,166 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: "IBM Plex Sans Arabic";
+    animation: fadeInUp 0.5s;
+
+}
+
+.nav {
+    transition: .25s ease-in-out;
+}
+
+.nav-link {
+    color: #1e1e1e;
+    font-size: 21px;
+    font-weight: 500;
+    transition: 0.20s ease-in-out;
+}
+
+#active:hover {
+    color: #2DC653;
+}
+.navbar-nav {
+    margin-right: 20%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+.navbar-nav .nav-item {
+    text-align: center;
+    border-right: 1px solid #ccc; /* إضافة حدود بين الصفحات */
+    padding-left: 10px; /* تعديل التباعد بين النص والحدود */
+    
+}
+.navbar-toggler:focus {
+    outline: none;
+    border: none;
+}
+
+.nav.scrolled {
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#signup {
+    font-size: 23px;
+    font-weight: 500;
+    background-color: #2DC653;
+    border: 1px solid #2DC653;
+    margin-right: auto;
+    padding: 5px 4%;
+    margin-left: 3%;
+}
+
+#btn_primary {
+    padding: 2% 13%;
+}
+
+#btn_primary:hover {
+    background-color: red;
+    color: whitesmoke;
+}
+
+#outline_btn {
+    padding: 2% 8%;
+    outline: 2px solid #2DC653;
+    color: #2DC653;
+}
+
+#outline_btn:hover {
+    background-color: #2DC653;
+    color: whitesmoke;
+}
+
+.lead {
+    font-weight: 500;
+    font-size: 23px;
+    color: #787878;
+}
+
+@media only screen and (max-width: 990px) {
+    #signup {
+        display: flex;
+        justify-content: center;
+        margin-top: 3%;
+        margin-bottom: 2%;
+
+    }
+
+    .navbar-nav {
+        margin-top: 3%;
+    }
+
+    .nav-link {
+        font-size: 20px;
+        padding-bottom: 1%;
+    }
+
+    .nav-link:hover {
+        background-color: #fff;
+        color: #787878;
+    }
+
+    #active:hover {
+        color: #787878;
+    }
+
+    #btn_primary {
+        padding: 1.5% 10%;
+    }
+
+    #outline_btn {
+        padding: 1.5% 10%;
+    }
+
+    .lead {
+        font-weight: 500;
+        font-size: 22px;
+        width: 80%;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .lead {
+        font-weight: 500;
+        font-size: 24px;
+        padding-bottom: 2%;
+    }
+    #main #btn_primary {
+        height: 60px;
+    }
+    #main #outline_btn {
+            height: 60px;
+    }
+}
+
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
