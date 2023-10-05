@@ -36,7 +36,7 @@ textarea {
 }
 
 .contact-form {
-  background-color: #1abc9c;
+  background-color: #2DC653;
   position: relative;
 }
 
@@ -46,7 +46,7 @@ textarea {
   position: absolute;
   width: 26px;
   height: 26px;
-  background-color: #1abc9c;
+  background-color: #2DC653;
   transform: rotate(45deg);
   top: 50px;
   left: -13px;
