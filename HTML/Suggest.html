@@ -11,21 +11,27 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="/CSS/Suggest.css">
     <link rel="icon" type="image/x-icon" href="/IMG/logo.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
+    ">
+    <link rel="stylesheet" href="/CSS/Suggest.css">
     <title>اقتراح | المنصة التطوعية</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg  sticky-top nav" id="nav" style="padding-top: 1%; z-index: 99;" dir="rtl">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg sticky-top nav" id="nav" style="padding-top: 1%; z-index: 99;" dir="rtl">
+      <div class="container-fluid">
           <a class="navbar-brand" href="#" style="margin-right: 4%;">
-            <img src="/IMG/logo.png" alt="شعار ثانوية الشيخ عبدالعزيز بن باز" width="140" height="70">
+              <img src="/IMG/logo.png" alt="شعار ثانوية الشيخ عبدالعزيز بن باز" width="140" height="70">
           </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav mr-auto">
+              <ul class="navbar-nav ml-auto">
                   <li class="nav-item active">
-                      <a class="nav-link" href="/HTML/Homepage.html" id="active" aria-pressed="true" >الرئيسية</a>
+                      <a class="nav-link" href="#" id="active" aria-pressed="true">الرئيسية</a>
                   </li>
                   <li class="nav-item border-left">
                       <a class="nav-link" href="/HTML/Chanses.html" id="nav2">الفرص التطوعية</a>
@@ -34,10 +40,10 @@
                       <a class="nav-link" href="/HTML/Suggest.html" id="nav2">اقتراح فرصة</a>
                   </li>
               </ul>
-                <a class="btn btn-primary" id="signup" href="/HTML/login.html" role="button">تسجيل الدخول</a>
+              <a class="btn btn-primary" id="signup" href="/HTML/login.html" role="button">تسجيل الدخول</a>
           </div>
-        </div>
-      </nav>
+      </div>
+  </nav> 
     <div class="container">
       <div class="form">
         <div class="contact-info">
@@ -56,7 +62,7 @@
               <span> اسم المستخدم</span>
             </div>
             <div class="input-container">
-              <input type="tel" name="phone" class="input" dir="rtl" placeholder="رقم الهاتف" maxlength="10" />
+              <input type="text" name="phone" class="input" dir="rtl" placeholder="رقم الهاتف" maxlength="10" />
               <label for=""></label>
               <span> رقم الجوال</span>
             </div>
@@ -70,7 +76,16 @@
         </div>
       </div>
     </div>
-
-    <script src="/abdullah/js/ContactAR.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/JS/nav.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js
+    "></script>
+    
+    <script>
+        AOS.init();
+    </script>
   </body>
 </html>
