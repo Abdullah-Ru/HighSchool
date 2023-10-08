@@ -72,38 +72,7 @@ if(is_log_in() == '') {
             </ul>
         </div>
 </nav>
-    <!-- <div class="container">
-      <div class="form">
-        <div class="contact-info">
-          <h3 class="title">! خير الكلام ماقل ودل</h3>
-          <p class="text">
-           سيتم النظر في اقتراحكم والرد عليه بأسرع وقت        </p>
-        </div>
-
-        <div class="contact-form">
-
-          <form action="index.html" autocomplete="off">
-            <h3 class="title">نسعد باقتراحك</h3>
-            <div class="input-container">
-              <input type="text" name="name" class="input" dir="rtl" placeholder="الاسم الثلاثي"/>
-              <label for=""></label>
-              <span> اسم المستخدم</span>
-            </div>
-            <div class="input-container">
-              <input type="text" name="phone" class="input" dir="rtl" placeholder="رقم الهاتف" maxlength="10" />
-              <label for=""></label>
-              <span> رقم الجوال</span>
-            </div>
-            <div class="input-container textarea">
-              <textarea name="message" class="input" dir="rtl" maxlength="200" placeholder="الفرصة المقترحة"></textarea>
-              <label class="lab" for=""></label>
-              <span> الرسالة</span>
-            </div>
-            <input type="submit" value="أرسال" id="btn" />
-          </form>
-        </div>
-      </div>
-    </div> -->
+   
     
     <div class="container">
       <div class="row justify-content-center">
@@ -139,9 +108,7 @@ if(is_log_in() == '') {
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="../JS/nav.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js
-    "></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         AOS.init();
     </script>
