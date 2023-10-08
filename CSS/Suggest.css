@@ -9,8 +9,7 @@
 body,
 input,
 textarea {
-    font-family: "IBM Plex Sans Arabic";
-
+  font-family: "IBM Plex Sans Arabic";
 }
 
 .container {
@@ -39,7 +38,6 @@ textarea {
   background-color: #2DC653;
   position: relative;
 }
-
 
 .contact-form:before {
   content: "";
@@ -72,7 +70,6 @@ form {
   position: relative;
   margin: 1rem 0;
   text-align: right;
-  
 }
 
 .input {
@@ -88,20 +85,22 @@ form {
   border-radius: 25px;
   transition: 0.3s;
 }
+
 .input::placeholder {
-    color: white;
-    font-weight: 200;
+  color: white;
+  font-weight: 200;
 }
+
 textarea.input {
   padding: 0.8rem 1.2rem;
   min-height: 150px;
   border-radius: 22px;
   resize: none;
-  overflow-y:auto ;
-
+  overflow-y: auto;
 }
 
-.input-container label {
+.input-container label,
+.input-container .lab {
   position: absolute;
   top: 50%;
   right: 15px;
@@ -114,19 +113,7 @@ textarea.input {
   z-index: 1000;
   transition: 0.5s;
 }
-.input-container .lab {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
-    padding: 0 0.4rem;
-    color: #fafafa;
-    font-size: 0.9rem;
-    font-weight: 400;
-    pointer-events: none;
-    z-index: 1000;
-    transition: 0.5s;
-  }
+
 .input-container.textarea label {
   top: 1rem;
   transform: translateY(0);
@@ -177,7 +164,6 @@ textarea.input {
   transform: translateY(-50%);
 }
 
-
 .input-container span:before {
   left: 50%;
 }
@@ -191,25 +177,21 @@ textarea.input {
   transform: translateY(-50%);
   font-size: 0.8rem;
 }
+
 .input-container.focus:nth-child(2) label {
-   right: 23px;
+  right: 23px;
 }
+
 .input-container.focus:nth-child(3) label {
-    font-size: 0.7rem;
+  font-size: 0.7rem;
 }
 
 .input-container.focus:nth-child(4) label {
-    right: 32px;
+  right: 32px;
 }
 
 .input-container.focus:nth-child(5) label {
-    right: 45px;
-}
-
-.input-container.focus span:before,
-.input-container.focus span:after {
-  width: 50%;
-  opacity: 1;
+  right: 45px;
 }
 
 .contact-info {
@@ -219,6 +201,7 @@ textarea.input {
   display: flex;
   flex-direction: column;
   align-items: end;
+  margin-top: 50px;
 }
 
 .contact-info .title {
@@ -231,34 +214,19 @@ textarea.input {
   text-align: right;
   right: 40px;
 }
-.information {
+
+.information,
+.information-inf,
+.information-info {
   display: flex;
   color: #555;
   margin-top: 10px;
   align-items: center;
   font-size: 0.95rem;
   text-align: right;
-  
+  justify-content: right;
 }
-.information-inf {
-    display: flex;
-    color: #555;
-    align-items: center;
-    font-size: 0.95rem;
-    text-align: right;
-    justify-content: right;
 
-  }
-  .information-info{
-    display: flex;
-    color: #555;
-    margin-top: 10px;
-    align-items: center;
-    font-size: 0.95rem;
-    text-align: right;
-    justify-content: right;
-    
-  }
 .icon {
   width: 28px;
   margin-right: 0.7rem;
@@ -372,6 +340,7 @@ textarea.input {
 
   .social-media {
     padding: 1.5rem 0 0 0;
+    margin-left: 0;
   }
 }
 
@@ -380,10 +349,7 @@ textarea.input {
     padding: 1.5rem;
   }
 
-  .contact-info:before {
-    display: none;
-  }
-
+  .contact-info:before,
   .square,
   .big-circle {
     display: none;
@@ -416,10 +382,10 @@ textarea.input {
 
   .input {
     padding: 0.45rem 1.2rem;
-    
   }
 
   .btn {
     padding: 0.45rem 1.2rem;
+    margin-left: 0;
   }
 }

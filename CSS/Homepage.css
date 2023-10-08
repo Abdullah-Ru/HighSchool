@@ -9,29 +9,20 @@ body {
 @media only screen and (max-width: 768px) {
     .navbar-nav {
         margin-left: 0;
-        /* gap: 30px; */
-        /* Remove margin for better centering */
+        display: flex;
+        justify-content: flex-start; /* تحديد محاذاة العناصر إلى اليمين */
+        align-items: center; /* توسيط العناصر عمودياً */
     }
 
     .navbar-nav .nav-item {
         border-right: none;
-        padding-left: 0;
-        padding-right: 10px;
-        /* Add right padding */
-        margin-bottom: 10px;
-        position: relative;
-        left: 180px;
-        border: white;
-        /* Add margin between navigation items */
+        padding-left: 10px; /* ترك مساحة مناسبة بين العناصر */
+        padding-right: 0; /* إزالة التموج الأيمن للعناصر */
     }
 
-    #signup {
-        font-size: 18px;
-        /* Adjust font size */
-        padding: 8px 16px;
-        /* Adjust button padding */
-        margin-left: 0;
-        /* Reset margin */
+    .nav.scrolled {
+        background-color: white;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
 }
 
@@ -89,7 +80,7 @@ body {
 }
 .navbar-nav .nav-item {
     text-align: center;
-    border-right: 1px solid #ccc;
+        border-right: 1px solid #ccc;
     padding-left: 10px;
 }
 .navbar-toggler:focus {
@@ -100,14 +91,4 @@ body {
 .nav.scrolled {
     background-color: white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-#signup {
-    font-size: 23px;
-    font-weight: 500;
-    background-color: #2DC653;
-    border: 1px solid #2DC653;
-    margin-right: auto;
-    padding: 5px 4%;
-    margin-left: 3%;
 }

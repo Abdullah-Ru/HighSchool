@@ -86,8 +86,11 @@ h6{
 
 .account-settings-links .list-group-item.active {
     font-weight: bold !important;
-}
 
+}
+.list-group-item.active {
+background-color: #2DC653;
+}
 html:not(.dark-style) .account-settings-links .list-group-item.active {
     background: transparent !important;
 }
@@ -148,17 +151,17 @@ h5{
 text-decoration: none;
 }
 
-#outline_btn {
+#outline_btn0 {
     padding: 0.5% 2%;
     outline: 2px solid #2DC653;
     color: #2DC653;
 }
 
-#outline_btn:hover {
+#outline_btn0:hover {
     background-color: #2DC653;
     color: whitesmoke;
 }
-#outline_btn2 {
+#outline_btn3 {
     padding: 0.5% 2%;
     background-color: red;
     color: white;
