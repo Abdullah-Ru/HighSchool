@@ -1,7 +1,9 @@
 <?php
 session_start();
+include('../PHP/SuggestF.php');
 require_once('../PHP/connection.php');
 require_once('../PHP/loginF.php');
+require_once('../PHP/myaccount.php');
 login();
 if(is_log_in() == '') {
   header('Location:../HTML/Homepage.php');
@@ -10,10 +12,9 @@ if(is_log_in() == '') {
 ?>
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/Homepage.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
@@ -29,10 +30,9 @@ if(is_log_in() == '') {
     <script src="https://kit.fontawesome.com/f775d5945e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../CSS/Suggest.css">
     <title>اقتراح | المنصة التطوعية</title>
-  </head>
+</head>
   <body>
-
-  <nav class="navbar navbar-expand-lg sticky-top no-padding" id="nav" dir="rtl">
+<nav class="navbar navbar-expand-lg sticky-top" id="nav" dir="rtl">
     <div class="container">
         <a class="navbar-brand" href="#">
             <img src="../IMG/logo.png" alt="شعار ثانوية الشيخ عبدالعزيز بن باز" width="140" height="70">
@@ -43,7 +43,7 @@ if(is_log_in() == '') {
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#" id="active">الرئيسية</a>
+                    <a class="nav-link" href="../HTML/Homepage.php" id="active">الرئيسية</a>
                 </li>
                 <li class="nav-item border-left">
                     <a class="nav-link" href="../HTML/Chanses.php" id="nav2">الفرص التطوعية</a>
@@ -76,38 +76,35 @@ if(is_log_in() == '') {
         </div>
     </div>
 </nav>
-    <div class="container">
-      <div class="form">
-        <div class="contact-info">
-          <h3 class="title">! خير الكلام ماقل ودل</h3>
-          <p class="text">
-           سيتم النظر في اقتراحكم والرد عليه بأسرع وقت        </p>
-        </div>
+<br><br><br>  
+<div class="container">
+        <div class="form">
+            <div class="contact-info">
+                <h3 class="title" style="font-size:1.5em;">! خير الكلام ماقل ودل</h3>
+                <p class="text" style="font-size:1.0em;">
+                    سيتم النظر في اقتراحكم والرد عليه بأسرع وقت
+                </p>
+            </div>
 
-        <div class="contact-form">
-
-          <form action="index.html" autocomplete="off">
-            <h3 class="title">نسعد باقتراحك</h3>
-            <div class="input-container">
-              <input type="text" name="name" class="input" dir="rtl" placeholder="الاسم الثلاثي"/>
-              <label for=""></label>
-              <span> اسم المستخدم</span>
+            <div class="contact-form">
+                <form method="post">
+                    <h3 class="title">نسعد باقتراحك</h3>
+                    <div class="input-container">
+                        <input type="text" name="name" class="input" dir="rtl" disabled value="<?php echo htmlspecialchars($row5["username"]);?>"/>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" name="phone" class="input" dir="rtl" placeholder="رقم الهاتف" maxlength="10" />
+                    </div>
+                    <div class="input-container">
+                        <textarea name="message" class="input" dir="rtl" maxlength="200" placeholder="الفرصة المقترحة"></textarea>
+                    </div>
+                    <button type="submit" name='subm' id="btn">إرسال</button>
+                </form>
             </div>
-            <div class="input-container">
-              <input type="text" name="phone" class="input" dir="rtl" placeholder="رقم الهاتف" maxlength="10" />
-              <label for=""></label>
-              <span> رقم الجوال</span>
-            </div>
-            <div class="input-container textarea">
-              <textarea name="message" class="input" dir="rtl" maxlength="200" placeholder="الفرصة المقترحة"></textarea>
-              <label class="lab" for=""></label>
-              <span> الرسالة</span>
-            </div>
-            <input type="submit" value="أرسال" id="btn" />
-          </form>
         </div>
-      </div>
     </div>
+   
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
