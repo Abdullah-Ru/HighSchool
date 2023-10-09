@@ -1,5 +1,6 @@
 <?php
 session_start();
+// include('../PHP/Chanse.php');
 require_once('../PHP/connection.php');
 require_once('../PHP/loginF.php');
 login();
@@ -26,6 +27,7 @@ if(is_log_in() == '') {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
     ">
+    
     <script src="https://kit.fontawesome.com/f775d5945e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>الفرص التطوعية | المنصة التطوعية</title>
@@ -61,6 +63,7 @@ if(is_log_in() == '') {
                             if (is_log_in() != "") {
                         ?>
                         <a class="dropdown-item" href="../php/logout.php" style='text-align:center;'>تسجيل خروج</a>
+                        <a class="dropdown-item" href="../HTML/myaccount.php" style='text-align:center;'>حسابي</a>
                         <?php
                             } else {
                         ?>
@@ -79,14 +82,45 @@ if(is_log_in() == '') {
         <h1 class="display-5 fw-bold lh-1 mb-3" style="color: #3A3A3A; ">البحث عن فرصة تطوعية</h1>
 </div>
         <br>
-        <div id="search">
-            <button id="outline_btn" type="button" class="btn btn-outline btn-lg" style="font-weight: 400; font-size: 21px;  padding: 8px;" onclick="GetChanses();">البحث</button>        </div>
+        <form id="search" method='post'>
+            <button id="outline_btn" type="submit" name='Search2' class="btn btn-outline btn-lg" style="font-weight: 400; font-size: 21px;  padding: 8px;">البحث</button></form>
         <br>
         <hr>
         <br><br>
         <div class="row row-cols-1 row-cols-md-3 g-4" id="cq">
-          </div>
-          
+            <?php
+            if (isset($_POST['Search2'])) {
+                $sql7 = "SELECT `Name`, `Hours_C`, `Count`, `add_date` FROM `chanse`";
+                $result7 = mysqli_query($conn, $sql7);
+                
+                if (mysqli_num_rows($result7) > 0) {
+                    while ($row = mysqli_fetch_assoc($result7)) {
+                        echo '
+                        <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">' . $row['Name'] . '</h5>
+                            <br>
+                            <p class="card-text">
+                                الساعات التطوعية : ' . $row['Hours_C'] . '
+                            </p>
+                            <p>
+                                العدد المطلوب : ' . $row['Count'] . '
+                            </p>
+                        </div>
+                        <button id="outline_btn" type="button" class="btn btn-outline btn-lg" style="font-weight: 400; font-size: 21px; padding: 3px; width: 60px; margin: auto; margin-bottom:10px ;">قدّم</button>
+                        <div class="card-footer">
+                            <small class="text-muted">وقت الاضافة : ' . $row['add_date'] . '</small>
+                        </div>
+                    </div>
+                    ';
+                    }
+                } else {
+                    echo '<h1>لم يتم العثور على فرص</h1>';
+                }
+            }
+            ?>
+            </div>
+
       </section>
     <script src="../JS/Chanses.js"></script>
     <script src="../JS/nav.js"></script>
