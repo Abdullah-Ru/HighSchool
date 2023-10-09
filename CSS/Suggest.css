@@ -9,21 +9,34 @@
 body,
 input,
 textarea {
-  font-family: "IBM Plex Sans Arabic";
+    font-family: "IBM Plex Sans Arabic";
+
 }
 
+.navbar.navbar-expand-lg.sticky-top {
+  padding: 0 !important;
+}
 .container {
   position: relative;
   width: 100%;
-  padding: 2rem;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.nav{
+padding: 0%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
 .form {
-  width: 820px;
+  width: 100%;
   max-width: 820px;
   background-color: #fff;
   border-radius: 10px;
@@ -33,26 +46,22 @@ textarea {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.col-md-8{
-  width: 550;
-  justify-content: center;
-  align-items: center;
-}
+
 .contact-form {
   background-color: #2DC653;
   position: relative;
 }
 
-.contact-form:before {
-  content: "";
-  position: absolute;
-  width: 26px;
-  height: 26px;
-  background-color: #2DC653;
-  transform: rotate(45deg);
-  top: 50px;
-  left: -13px;
+
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 form {
   padding: 2.3rem 2.2rem;
@@ -74,6 +83,7 @@ form {
   position: relative;
   margin: 1rem 0;
   text-align: right;
+  
 }
 
 .input {
@@ -89,22 +99,20 @@ form {
   border-radius: 25px;
   transition: 0.3s;
 }
-
 .input::placeholder {
-  color: white;
-  font-weight: 200;
+    color: white;
+    font-weight: 200;
 }
-
 textarea.input {
   padding: 0.8rem 1.2rem;
   min-height: 150px;
   border-radius: 22px;
   resize: none;
-  overflow-y: auto;
+  overflow-y:auto ;
+
 }
 
-.input-container label,
-.input-container .lab {
+.input-container label {
   position: absolute;
   top: 50%;
   right: 15px;
@@ -117,7 +125,19 @@ textarea.input {
   z-index: 1000;
   transition: 0.5s;
 }
-
+.input-container .lab {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    padding: 0 0.4rem;
+    color: #fafafa;
+    font-size: 0.9rem;
+    font-weight: 400;
+    pointer-events: none;
+    z-index: 1000;
+    transition: 0.5s;
+  }
 .input-container.textarea label {
   top: 1rem;
   transform: translateY(0);
@@ -168,6 +188,7 @@ textarea.input {
   transform: translateY(-50%);
 }
 
+
 .input-container span:before {
   left: 50%;
 }
@@ -181,21 +202,25 @@ textarea.input {
   transform: translateY(-50%);
   font-size: 0.8rem;
 }
-
 .input-container.focus:nth-child(2) label {
-  right: 23px;
+   right: 23px;
 }
-
 .input-container.focus:nth-child(3) label {
-  font-size: 0.7rem;
+    font-size: 0.7rem;
 }
 
 .input-container.focus:nth-child(4) label {
-  right: 32px;
+    right: 32px;
 }
 
 .input-container.focus:nth-child(5) label {
-  right: 45px;
+    right: 45px;
+}
+
+.input-container.focus span:before,
+.input-container.focus span:after {
+  width: 50%;
+  opacity: 1;
 }
 
 .contact-info {
@@ -205,7 +230,6 @@ textarea.input {
   display: flex;
   flex-direction: column;
   align-items: end;
-  margin-top: 50px;
 }
 
 .contact-info .title {
@@ -218,19 +242,34 @@ textarea.input {
   text-align: right;
   right: 40px;
 }
-
-.information,
-.information-inf,
-.information-info {
+.information {
   display: flex;
   color: #555;
   margin-top: 10px;
   align-items: center;
   font-size: 0.95rem;
   text-align: right;
-  justify-content: right;
+  
 }
+.information-inf {
+    display: flex;
+    color: #555;
+    align-items: center;
+    font-size: 0.95rem;
+    text-align: right;
+    justify-content: right;
 
+  }
+  .information-info{
+    display: flex;
+    color: #555;
+    margin-top: 10px;
+    align-items: center;
+    font-size: 0.95rem;
+    text-align: right;
+    justify-content: right;
+    
+  }
 .icon {
   width: 28px;
   margin-right: 0.7rem;
@@ -308,6 +347,7 @@ textarea.input {
   transform: translate(181%, 11%);
   opacity: 0.2;
 }
+
 
 @media (max-width: 850px) {
   .form {
