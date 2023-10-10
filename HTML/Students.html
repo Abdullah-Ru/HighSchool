@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/Students.css">
     <link rel="stylesheet" href="../CSS/Admin.css">
+    <link rel="stylesheet" href="../CSS/Students.css">
     <title>Responsive Dashboard Design #1 | AsmrProg</title>
 </head>
 
@@ -17,7 +17,7 @@
         <aside>
             <div class="toggle">
                 <div class="logo">
-                    <img src="../IMG/logo.png">
+                    <img src="images/logo.png">
                 </div>
                 <div class="close" id="close-btn">
                     <span class="material-icons-sharp">
@@ -27,29 +27,26 @@
             </div>
 
             <div class="sidebar">
-                <div class="list-group list-group-flush account-settings-links">
-                        <a href="../HTML/Students.html" class="Students"  data-toggle="list">
-                            <span class="material-icons-sharp">
-                                person_outline
-                            </span>
-                            <h3>الطلاب</h3>
-                        </a>
-
-                <a href="#AddChanses" class="list-group-item list-group-item-action" data-toggle="list">
+                <a href="../HTML/Students.html">
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3>الطلاب</h3>
+                </a>
+                <a href="#">
                     <span class="material-icons-sharp">
                         receipt_long
                     </span>
                     <h3>أضافة فرص</h3>
                 </a>
 
-                <a href="#Suggest" class="list-group-item list-group-item-action" data-toggle="list">
+                <a href="#">
                     <span class="material-icons-sharp">
                         mail_outline
                     </span>
                     <h3>الفرص المقترحة</h3>
                     <!-- <span class="message-count">27</span> -->
                 </a>
-                </div>
             </div>
         </aside>
         <!-- End of Sidebar Section -->
@@ -57,50 +54,45 @@
         <!-- Main Content -->
         <main>
 
-                <table class="content-table">
-                    <thead>
+            <table class="table">
+                <thead>
+                    <tr>
+                     <th>S.No</th>
+                     <th>Name</th>
+                     <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
                       <tr>
-                        <th>Rank</th>
-                        <th>Name</th>
-                        <th>Points</th>
-                        <th>Team</th>
+                            <td data-label="S.No">1</td>
+                            <td data-label="Name">Dinesh</td>
+                            <td data-label="Age">34</td>
+
                       </tr>
-                    </thead>
-                    <tbody>
+           
                       <tr>
-                        <td>1</td>
-                        <td>Domenic</td>
-                        <td>88,110</td>
-                        <td>dcode</td>
+                            <td data-label="S.No">2</td>
+                            <td data-label="Name">Kamal</td>
+                            <td data-label="Age">23</td>
+
                       </tr>
-                      <tr class="active-row">
-                        <td>2</td>
-                        <td>Sally</td>
-                        <td>72,400</td>
-                        <td>Students</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>Nick</td>
-                        <td>52,300</td>
-                        <td>dcode</td>
-                      </tr>
-                    </tbody>
-                  </table>
+           
+
+                </tbody>
+              </table>
+            <!-- Analyses -->
+
+            <!-- End of Analyses -->
+
+            <!-- New Users Section -->
+
+            <!-- End of New Users Section -->
+
+            <!-- Recent Orders Table -->
+            
+            <!-- End of Recent Orders -->
 
         </main>
-        <!-- Analyses -->
-
-        <!-- End of Analyses -->
-
-        <!-- New Users Section -->
-
-        <!-- End of New Users Section -->
-
-        <!-- Recent Orders Table -->
-
-        <!-- End of Recent Orders -->
-
         <!-- End of Main Content -->
 
         <!-- Right Section -->
@@ -130,14 +122,13 @@
             </div>
             <!-- End of Nav -->
 
-
+           
 
         </div>
 
 
     </div>
 
-    <script src="../JS/Orders.js"></script>
     <script src="../JS/Admin.js"></script>
 </body>
 
