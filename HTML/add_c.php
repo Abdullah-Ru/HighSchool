@@ -29,7 +29,7 @@ include('../PHP/AddChanse.php');
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+ <link rel="stylesheet" href="../CSS/Homepage.css">
     <title>Responsive Dashboard Design #1 | AsmrProg</title>
     <style>
         .input {
@@ -204,13 +204,8 @@ button#outline_btn {
 .navbar-toggler{
     max-width: 60px;
 }
-.form{
-    margin-right:134px;
-}
-.form2{
-    margin-right:70px;
 
-}
+
 h2{
     margin-right:10px;
 }
@@ -227,31 +222,50 @@ input{
 <body dir="rtl">
 
     <!-- Sidebar Section -->
-    <nav class="navbar navbar-expand-lg sticky-top" id="nav">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="../IMG/logo.png" alt="شعار ثانوية الشيخ عبدالعزيز بن باز" width="140" height="70">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="../HTML/Students.php" id="active">الطلاب</a>
-                    </li>
-                    <li class="nav-item border-left">
-                        <a class="nav-link" href="../HTML/Chanses.php" id="nav2">أضافة فرصة</a>
-                    </li>
-                    <li class="nav-item border-left">
-                        <a class="nav-link" href="../HTML/Suggest.php" id="nav2">الفرص المقترحة</a>
-                    </li>
-                </ul>
-
-                
-            </div>
+    <nav class="navbar navbar-expand-lg sticky-top nav" id="nav">
+    <div class="container">
+        <a class="navbar-brand"  href="#">
+            <img src="../IMG/logo.png" alt="شعار ثانوية الشيخ عبدالعزيز بن باز" width="140" height="70">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" id="active">الرئيسية</a>
+                </li>
+                <li class="nav-item border-left">
+                    <a class="nav-link" href="../HTML/Chanses.php" id="nav2">الفرص التطوعية</a>
+                </li>
+                <li class="nav-item border-left">
+                    <a class="nav-link" href="../HTML/Suggest.php" id="nav2">اقتراح فرصة</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user" dir='ltr'></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-center" aria-labelledby="navbarDropdown">
+                        <?php
+                            if (is_log_in() != "") {
+                        ?>
+                        <a class="dropdown-item" href="../php/logout.php" style='text-align:center;'>تسجيل خروج</a>
+                        <a class="dropdown-item" href="../HTML/myaccount.php" style='text-align:center;'>حسابي</a>
+                        <?php
+                            } else {
+                        ?>
+                        <a class="dropdown-item" href="../HTML/login.php" style='text-align:center;'>تسجيل الدخول</a>
+                        <?php
+                            }
+                        ?>
+                    </div>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
         <!-- End of Sidebar Section -->
         
         <!-- Main Content -->
