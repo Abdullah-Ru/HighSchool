@@ -31,7 +31,7 @@ if(is_log_in()) {
   <title>تسجيل الدخول | المنصة التطوعية</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg sticky-top" id="nav" dir='rtl'>
+<nav class="navbar navbar-expand-lg sticky-top nav" id="nav" dir='rtl'>
     <div class="container">
         <a class="navbar-brand" href="#">
             <img src="../IMG/logo.png" alt="شعار ثانوية الشيخ عبدالعزيز بن باز" width="140" height="70">

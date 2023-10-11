@@ -46,7 +46,6 @@ if(empty($op)){
                   WHERE id='$id'";
         mysqli_query($conn, $sql_2);
         header("Location: ../HTML/myaccount.php#account-change-password?success=Your password has been changed successfully");
-        exit();
 
     }else {
         header("Location: ../HTML/myaccount.php#account-change-password?error=Incorrect password");

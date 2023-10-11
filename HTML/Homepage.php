@@ -25,9 +25,9 @@ login();
     <title>الصفحة الرئيسية | المنصة التطوعية</title>
 </head>
 <body dir="rtl">
-<nav class="navbar navbar-expand-lg sticky-top" id="nav">
+<nav class="navbar navbar-expand-lg sticky-top nav" id="nav">
     <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand"  href="#">
             <img src="../IMG/logo.png" alt="شعار ثانوية الشيخ عبدالعزيز بن باز" width="140" height="70">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

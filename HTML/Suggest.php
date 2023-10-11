@@ -32,7 +32,7 @@ if(is_log_in() == '') {
     <title>اقتراح | المنصة التطوعية</title>
 </head>
   <body>
-<nav class="navbar navbar-expand-lg sticky-top" id="nav" dir="rtl">
+<nav class="navbar navbar-expand-lg sticky-top nav" id="nav" dir="rtl">
     <div class="container">
         <a class="navbar-brand" href="#">
             <img src="../IMG/logo.png" alt="شعار ثانوية الشيخ عبدالعزيز بن باز" width="140" height="70">
@@ -108,7 +108,7 @@ if(is_log_in() == '') {
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="/JS/nav.js"></script>
+    <script src="..oc/JS/nav.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js
     "></script>
