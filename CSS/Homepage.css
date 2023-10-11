@@ -83,7 +83,7 @@ main{
 .navbar-nav .nav-item {
     text-align: center;
         border-right: 1px solid #ccc;
-    
+    padding-left: 10px;
 }
 .navbar-toggler:focus {
     outline: none;

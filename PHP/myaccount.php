@@ -27,7 +27,7 @@ if(empty($op)){
   header("Location: ../HTML/myaccount.php#account-change-password?error");
   exit();
 }else if($np !== $c_np){
-  header("Location: ../HTML/myaccount.php#account-change-password?error");
+  header("Location: ../HTML/myaccount.php#account-change-password?error=The confirmation password  does not match");
   exit();
 }else {
     // hashing the password
@@ -45,11 +45,11 @@ if(empty($op)){
                   SET password='$np'
                   WHERE id='$id'";
         mysqli_query($conn, $sql_2);
-        header("Location: ../HTML/myaccount.php#account-change-password?success");
+        header("Location: ../HTML/myaccount.php#account-change-password?success=Your password has been changed successfully");
         exit();
 
     }else {
-        header("Location: ../HTML/myaccount.php#account-change-password?error");
+        header("Location: ../HTML/myaccount.php#account-change-password?error=Incorrect password");
         exit();
     }
 

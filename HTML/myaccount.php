@@ -88,8 +88,8 @@ if(is_log_in() == '') {
                     <div class="list-group list-group-flush account-settings-links">
                         <a class="list-group-item list-group-item-action active" data-toggle="list"
                             href="#account-general">عام</a>
-                        <a class="list-group-item list-group-item-action" data-toggle="list"
-                            href="#account-change-password">تغيير كلمة المرور</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list"
+                                href="#account-change-password">تغيير كلمة المرور</a>
                         <a class="list-group-item list-group-item-action" data-toggle="list"
                             href="#account-info">عدد الساعات التطوع</a>
                     </div>
@@ -152,8 +152,6 @@ if(is_log_in() == '') {
                 </div>
             </div>
         </div>
-        <form class="text-right mt-3" method='post'>
-        </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>

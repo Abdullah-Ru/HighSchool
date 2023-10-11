@@ -1,3 +1,11 @@
+<?php
+// Start PHP session at the very beginning of your script
+session_start();
+
+// Include required files
+include('../PHP/connection.php');
+require_once('../PHP/loginF.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,6 +27,150 @@
     <script src="https://kit.fontawesome.com/f775d5945e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../CSS/Students.css">
     <title>Responsive Dashboard Design #1 | AsmrProg</title>
+    <style>
+        body{
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 500px;
+    margin-bottom: 15px;
+  }
+  button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #171717;
+    padding: 1em 2em;
+    border: none;
+    border-radius: .6rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+    
+  .input {
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    width: 100%;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #D9E8D8;
+    color: #0d0c22;
+    box-shadow: 0 0 5px #C1D9BF, 0 0 0 10px #f5f5f5eb;
+    transition: .3s ease;
+  }
+  
+  .input::placeholder {
+    color: #777;
+  }
+  
+  .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #777;
+    width: 1rem;
+    height: 1rem;
+  }
+  
+
+.table{
+	width: 100%;
+	border-collapse:collapse ;
+}
+
+.table td,.table th{
+  padding:12px 15px;
+  border:1px solid #ddd;
+  text-align: center;
+  font-size:16px;
+}
+.table .none{
+    padding:12px 15px;
+    border:1px solid #ddd;
+    text-align: center;
+    font-size:16px;
+    display: none;
+  }
+
+.table th{
+	background-color: darkblue;
+	color:#ffffff;
+}
+
+.table tbody tr:nth-child(even){
+	background-color: #f5f5f5;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonC{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*responsive*/
+
+@media(max-width: 500px){
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 100%;
+	}
+	.table tr{
+		margin-bottom:15px;
+	}
+	.table td{
+		text-align: right;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+	}
+    .table .none{
+		text-align: right;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+        display: none;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:15px;
+		font-weight: bold;
+		text-align: left;
+	}
+}
+    </style>
 </head>
 
 <body dir="rtl">
@@ -88,7 +240,7 @@
 
                     </tr>
                 </thead>
-                <tbody>
+                <tbody> 
                     <tr>
                         <td data-label="S.No" class="none">1</td>
                         <td data-label="الأسم">عبدالله بن علي بن عبدالله الرسيني</td>
