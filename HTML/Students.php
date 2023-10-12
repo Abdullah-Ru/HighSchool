@@ -78,6 +78,7 @@ main{
     color: #0d0c22;
     box-shadow: 0 0 5px #C1D9BF, 0 0 0 10px #f5f5f5eb;
     transition: .3s ease;
+    max-width: 250px;
   }
   
   .input::placeholder {
@@ -96,6 +97,7 @@ main{
 .table{
 	width: 100%;
 	border-collapse:collapse ;
+    max-width: 800px;
 }
 
 .table td,.table th{
@@ -297,6 +299,7 @@ main{
     <script src="../JS/nav.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JS/Students.js"></script>
     <script>
         AOS.init();
     </script>
