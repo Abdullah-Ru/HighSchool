@@ -147,7 +147,7 @@ main{
     color: #2DC653;
 }
 .navbar-nav {
-    margin-right: 20%;
+    margin-right: 10%;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -158,7 +158,7 @@ main{
 .navbar-nav .nav-item {
     text-align: center;
         border-right: 1px solid #ccc;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 .navbar-toggler:focus {
     outline: none;
@@ -233,13 +233,13 @@ input{
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#" id="active">الرئيسية</a>
+                    <a class="nav-link" href="../HTML/Students.php" id="active">الطلاب</a>
                 </li>
                 <li class="nav-item border-left">
-                    <a class="nav-link" href="../HTML/Chanses.php" id="nav2">الفرص التطوعية</a>
+                    <a class="nav-link" href="../HTML/add_c.php" id="nav2">أضافة فرصة</a>
                 </li>
                 <li class="nav-item border-left">
-                    <a class="nav-link" href="../HTML/Suggest.php" id="nav2">اقتراح فرصة</a>
+                    <a class="nav-link" href="#" id="nav2">الفرص المقترحة</a>
                 </li>
             </ul>
             <ul class="navbar-nav">

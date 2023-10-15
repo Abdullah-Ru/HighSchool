@@ -46,10 +46,10 @@ if(is_log_in() == '') {
                     <a class="nav-link" href="../HTML/Homepage.php" id="active">الرئيسية</a>
                 </li>
                 <li class="nav-item border-left">
-                    <a class="nav-link" href="../HTML/Chanses.php" id="nav2">الفرص التطوعية</a>
+                    <a class="nav-link" href="../HTML/add_c.php" id="nav2">الفرص التطوعية</a>
                 </li>
                 <li class="nav-item border-left">
-                    <a class="nav-link" href="../HTML/Suggest.php" id="nav2">اقتراح فرصة</a>
+                    <a class="nav-link" href="#" id="nav2">اقتراح فرصة</a>
                 </li>
             </ul>
             <ul class="navbar-nav">

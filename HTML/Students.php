@@ -187,13 +187,13 @@ main{
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#" id="active">الطلاب</a>
+                        <a class="nav-link" href="../HTML/Homepage.php" id="active">الطلاب</a>
                     </li>
                     <li class="nav-item border-left">
-                        <a class="nav-link" href="../HTML/Chanses.php" id="nav2">أضافة فرصة</a>
+                        <a class="nav-link" href="../HTML/add_c.php" id="nav2">أضافة فرصة</a>
                     </li>
                     <li class="nav-item border-left">
-                        <a class="nav-link" href="../HTML/Suggest.php" id="nav2">الفرص المقترحة</a>
+                        <a class="nav-link" href="#" id="nav2">الفرص المقترحة</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
