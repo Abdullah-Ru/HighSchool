@@ -106,6 +106,7 @@ if(is_log_in() == '') {
                             <p>
                                 العدد المطلوب : ' . $row['Count'] . '
                             </p>
+                            <input type="number" style="width: 50px;">
                         </div>
                         <button id="outline_btn" type="button" class="btn btn-outline btn-lg" style="font-weight: 400; font-size: 21px; padding: 3px; width: 60px; margin: auto; margin-bottom:10px ;">قدّم</button>
                         <div class="card-footer">

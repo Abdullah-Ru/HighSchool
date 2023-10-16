@@ -181,7 +181,17 @@ main {
   text-align: center; /* Center the text within the main element */
 }
 
-form {
+.form {
+  width: 100%; /* Ensure the form takes the full width */
+  max-width: 400px; /* Adjust the max width as needed */
+  padding: 20px;
+  margin: top 50% ;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#f_ {
   width: 100%; /* Ensure the form takes the full width */
   max-width: 400px; /* Adjust the max width as needed */
   padding: 20px;
@@ -302,7 +312,7 @@ input{
                 echo '
                 <div class="card h-100">
                 <div class="card-body">
-                <form method="post" id="f_' . $uniqueId . '">
+                <form method="post" class="form2" id="f_' . $uniqueId . '">
                     <h5 class="card-title" id="name_p_' . $uniqueId . '">' . $row['Name'] . '</h5>
                     <br>
                     <p class="card-text" id="hours_p_' . $uniqueId . '">الساعات التطوعية : ' . $row['Hours_C'] . '</p>
@@ -423,8 +433,7 @@ if (isset($_POST['delete'])) {
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="../JS/nav.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js
-    "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         AOS.init();
     </script>
