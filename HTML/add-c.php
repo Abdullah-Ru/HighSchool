@@ -1,4 +1,4 @@
-    <?php
+<?php
     // Start PHP session at the very beginning of your script
     session_start();
 
@@ -128,9 +128,7 @@
         height: 1rem;
     }
     
-    .row{
-    flex-direction:column ! important; 
-    }
+
     .h-100{
         right:200px;
         width: 300px;
